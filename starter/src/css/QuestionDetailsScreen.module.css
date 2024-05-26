@@ -1,0 +1,21 @@
+.container {
+    text-align: center;
+    margin: 1em;
+}
+
+.author-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.author-name {
+    margin: 4px 0px;
+    font-weight: 600;
+}
+
+.vote-options {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}

@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirm {
+    display: inline-block;
+    height: 30px;
+    align-self: center;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
