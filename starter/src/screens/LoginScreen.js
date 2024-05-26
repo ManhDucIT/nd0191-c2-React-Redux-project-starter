@@ -70,7 +70,7 @@ const Login = () => {
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   className={errors.username ? styles["error"] : ""}
-                  />
+                  data-testid="username-field" />
                   {errors.username && <div className={styles["error-text"]}>{errors.username}</div>}
               </div>
               <div>
@@ -81,10 +81,10 @@ const Login = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className={errors.password ? styles["error"] : ""}
-                  />
+                  data-testid="password-field" />
                   {errors.password && <div className={styles["error-text"]}>{errors.password}</div>}
               </div>
-              <button type="submit">Login</button>
+              <button type="submit" data-testid="submit-button">Login</button>
             </form>
         </div>
     </div>
