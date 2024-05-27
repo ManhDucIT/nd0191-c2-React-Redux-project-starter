@@ -1,70 +1,70 @@
 .container {
-  display: flex;
-  height: 60px;
-  margin: auto;
-  padding: 0rem 1rem;
-  align-items: center;
+	display: flex;
+	height: 60px;
+	margin: auto;
+	padding: 0rem 1rem;
+	align-items: center;
 }
 
 .navigation {
-  display: flex;
-  flex: 1;
-  justify-content: start;
-  align-items: center;
+	display: flex;
+	flex: 1;
+	justify-content: start;
+	align-items: center;
 }
 
 .list {
-  display: flex;
-  gap: 1rem;
+	display: flex;
+	gap: 1rem;
 }
 
 .list a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .list a.active {
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: orange;
-  text-decoration-style: solid;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 8px;
+	font-weight: bold;
+	text-decoration: underline;
+	text-decoration-color: orange;
+	text-decoration-style: solid;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 8px;
 }
 
 .user-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
 }
 
 .user-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
 }
 
 .user-name {
-  font-weight: 500;
+	font-weight: 500;
 }
 
 .logout {
-  display: inline-block;
-  height: 30px;
-  align-self: center;
-  margin-left: 24px;
-  padding: 6px 12px;
-  border: none;
-  border-radius: 20px;
-  color: white;
-  background-color: red;
-  cursor: pointer;
-  transition: background-color 0.3s;
+	display: inline-block;
+	height: 30px;
+	align-self: center;
+	margin-left: 24px;
+	padding: 6px 12px;
+	border: none;
+	border-radius: 20px;
+	color: white;
+	background-color: red;
+	cursor: pointer;
+	transition: background-color 0.3s;
 }
 
 hr {
-  display: block;
-  margin: 0px 0 0 0;
-  border: 0;
-  border-top: 2px solid #ccc;
+	display: block;
+	margin: 0px 0 0 0;
+	border: 0;
+	border-top: 2px solid #ccc;
 }

@@ -1,53 +1,52 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-  }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
   
-  .login-box {
-    width: 40%;
-    text-align: center;
-  }
-  
-  .login-box h1,
-  .login-box h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
-  }
-  
-  .login-box input {
+.login-box {
+	width: 40%;
+	text-align: center;
+}
+
+.login-box h1,
+.login-box h2 {
+	margin-bottom: 20px;
+	text-align: center;
+	color: #333;
+}
+
+.login-box input {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .login-box input.error {
-    border-color: red;
-  }
-  
-  .login-box .error-text {
-    color: red;
-    font-size: 12px;
-    margin-bottom: 10px;
-  }
-  
-  .login-box button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .login-box button:hover {
-    background-color: #0056b3;
-  }
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.login-box input.error {
+	border-color: red;
+}
+
+.login-box .error-text {
+	color: red;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.login-box button {
+	width: 100%;
+	padding: 10px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.login-box button:hover {
+	background-color: #0056b3;
+}

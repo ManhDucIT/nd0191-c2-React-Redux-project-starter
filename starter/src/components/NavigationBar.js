@@ -24,13 +24,13 @@ const NavigationBar = () => {
                     <nav>
                         <ul className={styles["list"]}>
                             <li>
-                                <NavLink to="/" className={({ isActive }) => isActive ? styles["active"] : undefined}>Home</NavLink>
+                                <NavLink to="/" className={({ isActive }) => isActive ? styles["active"] : undefined} data-testid="link-home">Home</NavLink>
                             </li>
                             <li>
-                                <NavLink to="leaderboard" className={({ isActive }) => isActive ? styles["active"] : undefined}>Leaderboard</NavLink>
+                                <NavLink to="leaderboard" className={({ isActive }) => isActive ? styles["active"] : undefined} data-testid="link-leaderboard">Leaderboard</NavLink>
                             </li>
                             <li>
-                                <NavLink to="add" className={({ isActive }) => isActive ? styles["active"] : undefined}>New</NavLink>
+                                <NavLink to="add" className={({ isActive }) => isActive ? styles["active"] : undefined} data-testid="link-add">New</NavLink>
                             </li>
                         </ul>
                     </nav>

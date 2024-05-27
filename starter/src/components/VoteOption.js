@@ -32,7 +32,7 @@ const VoteOption = ({ id, questionId, title, votes, isQuestionVoted, totalVotes 
                         <button className={styles["vote"]} onClick={handleVote}>Click</button>
                     ) : (
                         <div className={votedOption === id ? styles["vote-info-selected"] : styles["vote-info"]}>
-                            <p>{votes.length} voted ({votes.length / totalVotes * 100}%)</p>
+                            <p>{votes.length} voted ({(votes.length / totalVotes) * 100}%)</p>
                         </div>
                     )
                 }

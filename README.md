@@ -1,5 +1,14 @@
 # Employee Polls Project
 
+This is a fork of https://github.com/udacity/nd0191-c2-React-Redux-project-starter/ Udacity starter project.
+
+## Instructions for installing and launching the project:
+1. Clone project: git clone https://github.com/ManhDucIT/nd0191-c2-React-Redux-project-starter.git.
+2. Open root folder (nd0191-c2-React-Redux-project-starter-main) in VSCode
+3. Inside VSCode Terminal, go to starter folder: cd starter
+4. Install dependencies: npm i
+5. Start project: npm start
+
 This is the starter code for the final assessment project for Udacity's React & Redux course.
 
 The `_DATA.js` file represents a fake database and methods that let you access the data. The only thing you need to edit in the ` _DATA.js` file is the value of `avatarURL`. Each user should have an avatar, so you’ll need to add the path to each user’s avatar.
