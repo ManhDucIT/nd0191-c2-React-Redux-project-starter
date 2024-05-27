@@ -12,18 +12,20 @@ export const createQuestion = ({ optionOne, optionTwo }) => {
             author: auth.userId
         });
 
-        dispatch(
-            questionsActions.addQuestion({
-                question: data
-            })
-        );
-
-        dispatch(
-            usersActions.addQuestionToUser({
-                userId: auth.userId,
-                questionId: data.id
-            })
-        );
+        if (data) {
+            dispatch(
+                questionsActions.addQuestion({
+                    question: data
+                })
+            );
+    
+            dispatch(
+                usersActions.addQuestionToUser({
+                    userId: auth.userId,
+                    questionId: data.id
+                })
+            );
+        }
     }
 };
 
@@ -31,26 +33,28 @@ export const voteQuestion = ({ questionId, voteOption }) => {
     return async (dispatch, getState) => {
         const { auth } = getState();
 
-        const data = await apis.saveQuestionAnswer({
+        const result = await apis.saveQuestionAnswer({
             authedUser: auth.userId,
             qid: questionId,
             answer: voteOption
         });
 
-        dispatch(
-            questionsActions.voteQuestion({
-                qid: questionId,
-                answer: voteOption,
-                userId: auth.userId
-            })
-        );
-
-        dispatch(
-            usersActions.addVoteToUser({
-                userId: auth.userId,
-                questionId: questionId,
-                answer: voteOption
-            })
-        );
+        if(result){
+            dispatch(
+                questionsActions.voteQuestion({
+                    qid: questionId,
+                    answer: voteOption,
+                    userId: auth.userId
+                })
+            );
+    
+            dispatch(
+                usersActions.addVoteToUser({
+                    userId: auth.userId,
+                    questionId: questionId,
+                    answer: voteOption
+                })
+            );
+        }
     }
 };
